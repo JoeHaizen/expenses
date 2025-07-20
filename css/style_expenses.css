@@ -1,4 +1,4 @@
-#income{
+#expense{
     margin-left: 250px;
     color: #1d6494;
     font-size: 50px;
@@ -8,7 +8,7 @@ body{
     background-color: #eaecd2;
 
 }
-#new-income-title{
+#new-expense-title{
     font-size: 25px;
     margin-left: -46px;
 }
@@ -34,7 +34,7 @@ body{
   font-family: sans-serif;
   margin: auto;
 }
-.new-income{
+.new-expense{
     margin-left: 50px;
 }
 table {

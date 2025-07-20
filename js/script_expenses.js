@@ -1,9 +1,9 @@
-  //Income Table 
-  const rowsPerPageIncome = 2;
-  const tableIncome = document.getElementById("incomeTable");
-  const tbodyIncome = tableIncome.querySelector("tbody");
-  const rowsIncome = Array.from(tbodyIncome.querySelectorAll("tr"));
-  const paginationIncome = document.getElementById("pagination");
+  //Expense Table 
+  const rowsPerPageExpense = 2;
+  const tableExpense = document.getElementById("expenseTable");
+  const tbodyExpense = tableExpense.querySelector("tbody");
+  const rowsExpense = Array.from(tbodyExpense.querySelectorAll("tr"));
+  const paginationExpense = document.getElementById("pagination");
 
   //Suggestion Table 
   const rowsPerPageSugg = 2; 
@@ -31,9 +31,9 @@
     }
   }
 
-  displayPage(1 ,rowsPerPageIncome,rowsIncome,tbodyIncome);
+  displayPage(1 ,rowsPerPageExpense,rowsExpense,tbodyExpense);
   displayPage(1,rowsPerPageSugg,rowsSugg, tbodySugg);
-  setupPagination(rowsIncome, rowsPerPageIncome, paginationIncome,  tbodyIncome);
+  setupPagination(rowsExpense, rowsPerPageExpense, paginationExpense,  tbodyExpense);
   setupPagination(rowsSugg, rowsPerPageSugg, paginationSugg, tbodySugg);
 
 
