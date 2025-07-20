@@ -1,0 +1,128 @@
+#income{
+    margin-left: 250px;
+    color: #1d6494;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: #eaecd2;
+
+}
+#new-income-title{
+    font-size: 25px;
+    margin-left: -46px;
+}
+
+.selecteur-mois {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: #dbe0a7;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    font-family: sans-serif;
+    color: #1d6494;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#moisAnnee{
+  color: #1d6494;
+  font-size: 25px;
+  font-family: sans-serif;
+  margin: auto;
+}
+.new-income{
+    margin-left: 50px;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    margin-left: 10px;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  thead {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  textarea{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #pagination button {
+    margin: 5px;
+    padding: 6px 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #pagination button:hover {
+    background-color: #2980b9;
+  }
+    #pagination-suggestion button {
+    margin: 5px;
+    padding: 6px 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #agination-suggestion button:hover {
+    background-color: #2980b9;
+  }

@@ -1,0 +1,64 @@
+body{
+background-color: rgb(226, 220, 220);
+}
+h1 {
+    color: rgb(68, 58, 61);
+    font-size: 50px;
+/*    text-align:start ;  */
+    margin-left: 100px;
+    text-transform: uppercase;
+  }
+.ImageAccueil {
+    width: 0px;       /* Largeur fixe */
+    height:  auto;       /* Hauteur auto pour garder les proportions */
+    margin-left: 400px;
+   box-shadow: 0 4px 8px rgba(124, 98, 98, 0.3);                             
+ /*    transition: transform 3 s ease;     
+        object-fit: cover;          ????*/
+   width: 50%;     
+   transition: all 0.4s ease;
+}
+.ImageAccueil:hover {
+  transform: scale(1.02); 
+  border: 2px solid #333;   /* Bordure grise */
+  border-radius: 10px;      /* Coins arrondis */   
+
+ /*    transition: transform 0.3s ease, opacity 0.3s ease;
+    border: 3px solid #00bfff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    filter: grayscale(100%);
+*/
+  }
+
+  #rubriques{
+    margin-top: 100px;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-left: 400px;
+  }
+#rubriques button {
+    color: #ffffff;
+    border:1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px #aaa;
+    padding: 10px 15px;
+    background-color: rgba(56, 9, 9, 0.3);  
+    cursor: pointer;
+    margin-left :0px;
+    font-size: 35px;
+    border-style: outset;
+}
+#rubriques button:hover {
+    background-color: #2980b9;
+  }
+  
+#rubriques button:active {
+    transform: scale(0.98);
+  }
+  
+#rubriques button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+  }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>INCOME</title>
+  <link rel="stylesheet" href="/css/style_income.css">
+</head>
+<body>
+  <h1 id="income">INCOME $</h1>
+<!--   <img class="ImageAccueil" src="Images/MoneyScale.png" alt="Money Time Scale"> -->
+<div class="selecteur-mois">
+    <label for="moisAnnee">Mois & Année :</label>
+    <input type="month" id="moisAnnee" name="moisAnnee">
+  </div>
+  <div class="new-income">
+    <h1 id="new-income-title">New income</h1>
+    <form action="" method="post">
+
+
+        <label for="income">Add Amount</label>
+        <input type="number" id="new-income" required>
+
+        <label for="label">Add Label</label>
+        <input type="text" id="label-new-income" required>
+
+        <input type="submit" value="Send">
+    </form>
+  </div>
+  <div>
+    <table id="incomeTable">
+        <thead>
+          <tr>
+            <th>Income</th>
+            <th>Amount</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Salaire</td>
+            <td>2440</td>
+            <td>Description</td>
+          </tr>
+          <tr>
+            <td>Prime Vacances</td>
+            <td>340</td>
+            <td>Description</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  <div id="pagination"></div>
+  <div class="new-suggestion">
+    <h1 id="new-suggestion-title">New suggestion</h1>
+    <form action="" method="post">
+
+
+        <label for="suggestion">Add new suggestion</label>
+        <input type="text" id="suggestion-title" required>
+        <textarea  id="suggestion" required></textarea>
+        <br>
+        <input type="submit" value="Send">
+    </form>
+  </div>
+  <div>
+    <table id = "suggestion-table">
+        <thead>
+          <tr>
+            <th>Suggesstion</th>
+            <th>Content</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Suggestion1</td>
+            <td>paragraphe paragraphe paragraphe paragraphe 
+                paragraphe paragraphe paragraphe paragraphe 
+                paragraphe paragraphe paragraphe paragraphe 
+                paragraphe paragraphe paragraphe paragraphe 
+                paragraphe paragraphe paragraphe paragraphe 
+            </td>
+          </tr>
+          <tr>
+            <td>Suggestion2</td>
+            <td>paragraphe paragraphe paragraphe paragraphe 
+                paragraphe paragraphe paragraphe paragraphe 
+                paragraphe paragraphe paragraphe paragraphe 
+                paragraphe paragraphe paragraphe paragraphe 
+                paragraphe paragraphe paragraphe paragraphe </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  <div id="pagination-suggestion"></div>
+  <script src="/js/script_income.js"></script>
+</body>
+</html>
