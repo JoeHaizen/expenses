@@ -1,5 +1,7 @@
 const imgAccueil = document.getElementsByClassName('ImageAccueil')[0];
 const zone = document.getElementById('zoneDeFormulaire');
+const btnIncome = document.getElementById("btnIncome");
+const btnExpenses = document.getElementById("btnExpenses");
 
 /*imgAccueil.addEventListener('click',function(){
     imgAccueil.style.width='30%';
@@ -19,4 +21,14 @@ imgAccueil.addEventListener('click', () => {
   imgAccueil.style.width = '30%';
   imgAccueil.style.marginLeft = '650px';
   rubriques.style.display = 'flex'; // ou 'block' si tu préfères en colonne
+});
+
+// Quand on clique sur INCOME
+btnIncome.addEventListener("click", () => {
+  window.location.href = "income.html";
+});
+
+// Quand on clique sur INCOME
+btnExpenses.addEventListener("click", () => {
+  window.location.href = "expenses.html";
 });

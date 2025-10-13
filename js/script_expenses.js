@@ -1,4 +1,14 @@
-  //Expense Table 
+ // Retour à l'accueil
+  const btnAccueil = document.getElementById("btnAccueil");
+
+  // Quand on clique sur Accueil
+    btnAccueil.addEventListener("click", () => {
+  window.location.href = "accueil.html";
+    });
+
+ 
+
+//Expense Table 
   const rowsPerPageExpense = 2;
   const tableExpense = document.getElementById("expenseTable");
   const tbodyExpense = tableExpense.querySelector("tbody");

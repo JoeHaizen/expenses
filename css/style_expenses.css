@@ -1,11 +1,13 @@
 #expense{
     margin-left: 250px;
-    color: #1d6494;
+    color: rgb(68, 58, 61);
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body{
-    background-color: #eaecd2;
+    /* background-color: #eaecd2;
+ */
+ background-color: rgb(226, 220, 220);
 
 }
 #new-expense-title{
@@ -17,19 +19,20 @@ body{
     position: absolute;
     top: 10px;
     right: 20px;
-    background: #dbe0a7;
+    /* background: #dbe0a7; */
+    background-color: rgb(119, 101, 101);
     padding: 12px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
     font-family: sans-serif;
-    color: #1d6494;
+    color: rgb(68, 58, 61);
     font-size: 25px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 #moisAnnee{
-  color: #1d6494;
+  color: rgb(68, 58, 61);
   font-size: 25px;
   font-family: sans-serif;
   margin: auto;
@@ -53,7 +56,7 @@ table {
   }
   
   thead {
-    background-color: #3498db;
+    background-color: rgb(97, 81, 81);
     color: white;
   }
   
@@ -75,7 +78,8 @@ table {
   input[type="submit"] {
     margin-top: 10px;
     padding: 8px 16px;
-    background-color: #3498db;
+    background-color: rgb(97, 81, 81);
+
     color: white;
     border: none;
     border-radius: 4px;
@@ -89,7 +93,9 @@ table {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    
+  }
+  input:hover {
+    background-color: rgb(160, 140, 140);
   }
   textarea{
     margin-bottom: 10px;
@@ -103,7 +109,7 @@ table {
   #pagination button {
     margin: 5px;
     padding: 6px 12px;
-    background-color: #3498db;
+    background-color: rgb(97, 81, 81);
     color: white;
     border: none;
     border-radius: 4px;
@@ -111,18 +117,37 @@ table {
   }
   
   #pagination button:hover {
-    background-color: #2980b9;
+    background-color: rgb(160, 140, 140);
   }
     #pagination-suggestion button {
     margin: 5px;
     padding: 6px 12px;
-    background-color: #3498db;
+    background-color: rgb(97, 81, 81);
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
+
+  #pagination-suggestion button:hover {
+  background-color: rgb(160, 140, 140);
+  }
+
   
-  #agination-suggestion button:hover {
-    background-color: #2980b9;
+  #accueil{
+    margin-top: -79px;
+  }
+  #btnAccueil {
+    margin: 5px;
+    padding: 6px 12px;
+    background-color: rgb(97, 81, 81);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 66px;
+  }
+
+  #btnAccueil:hover {
+    background-color: rgb(160, 140, 140);
   }

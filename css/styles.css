@@ -9,11 +9,14 @@ h1 {
     text-transform: uppercase;
   }
 .ImageAccueil {
+    cursor: pointer;  
     width: 0px;       /* Largeur fixe */
     height:  auto;       /* Hauteur auto pour garder les proportions */
     margin-left: 400px;
-   box-shadow: 0 4px 8px rgba(124, 98, 98, 0.3);                             
- /*    transition: transform 3 s ease;     
+    box-shadow: 0 4px 8px rgba(124, 98, 98, 0.3);                             
+    transition: transform 0.3s ease;
+
+   /*    transition: transform 3 s ease;     
         object-fit: cover;          ????*/
    width: 50%;     
    transition: all 0.4s ease;
