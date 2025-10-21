@@ -1,4 +1,4 @@
-package com.example.joeexizen;
+package com.joeexizen;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

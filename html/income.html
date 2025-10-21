@@ -26,7 +26,6 @@
 
         <label for="description">Add Description</label>
         <input type="text" id="description-new-income" required>
-
         <input type="submit" value="Send">
     </form>
   </div>
@@ -37,31 +36,22 @@
             <th>Income</th>
             <th>Amount</th>
             <th>Description</th>
+            <th>Date</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Salaire</td>
-            <td>2440</td>
-            <td>Description</td>
-          </tr>
-          <tr>
-            <td>Prime Vacances</td>
-            <td>340</td>
-            <td>Description</td>
-          </tr>
         </tbody>
       </table>
   </div>
   <div id="pagination"></div>
   <div class="new-suggestion">
     <h1 id="new-suggestion-title">New suggestion</h1>
-    <form action="" method="post">
-
+    <form id="add-new-suggestion" action="" method="post">
 
         <label for="suggestion">Add new suggestion</label>
-        <input type="text" id="suggestion-title" required>
-        <textarea  id="suggestion" required></textarea>
+        <input type="text" id="new-suggestion" required>
+        <textarea  id="content-new-suggestion" required></textarea>
         <br>
         <input type="submit" value="Send">
     </form>
@@ -70,28 +60,14 @@
     <table id = "suggestion-table">
         <thead>
           <tr>
-            <th>Suggesstion</th>
+            <th>Suggestion</th>
             <th>Content</th>
+            <th>Date</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Suggestion1</td>
-            <td>paragraphe paragraphe paragraphe paragraphe 
-                paragraphe paragraphe paragraphe paragraphe 
-                paragraphe paragraphe paragraphe paragraphe 
-                paragraphe paragraphe paragraphe paragraphe 
-                paragraphe paragraphe paragraphe paragraphe 
-            </td>
-          </tr>
-          <tr>
-            <td>Suggestion2</td>
-            <td>paragraphe paragraphe paragraphe paragraphe 
-                paragraphe paragraphe paragraphe paragraphe 
-                paragraphe paragraphe paragraphe paragraphe 
-                paragraphe paragraphe paragraphe paragraphe 
-                paragraphe paragraphe paragraphe paragraphe </td>
-          </tr>
+         
         </tbody>
       </table>
   </div>

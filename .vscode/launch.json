@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-JoeExIzenApplication<joeexizen>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.joeexizen.JoeExIzenApplication",
+            "projectName": "joeexizen",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
