@@ -37,6 +37,15 @@ const dateInput = document.getElementById("moisAnnee");
 /**
  * Retourne la valeur actuelle du champ date sous forme "YYYY-MM"
  */
+// -------------------------------
+// gestions des boutons extras
+// -------------------------------
+btnAbonnement = document.getElementById("btnAbonnement");
+btnx4paiements = document.getElementById("btnx4paiements");
+btnstats = document.getElementById("btnstats");
+btnfixedbudget = document.getElementById("btnfixedbudget");
+
+
 function getSelectedMonthYear() {
   return dateInput.value.trim();
 }
@@ -363,3 +372,20 @@ dateInput.addEventListener("change", () => {
 // -------------------------------
 loadExpenses();
 loadExpenseSuggestions();
+
+// ============================================================
+// 🔘 Gestion des boutons pop-ups des dépenses 
+const buttons = document.querySelectorAll("#button-container button");
+buttons.forEach(button => {
+  button.addEventListener("click", () =>{
+    const page = button.dataset.page;
+
+    window.open(page,
+      `popup-${page}`,
+      "width=800,height=600,top=100,left=100,resizable=yes,scrollbars=yes"
+    )
+  });
+});
+
+
+

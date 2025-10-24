@@ -132,7 +132,39 @@ input:hover {
   border-radius: 4px;
   cursor: pointer;
 }
+#button-container {
+/*     margin-top: 100px;*/   
+     gap: 100px;
+     display: flex;
+    /* flex-wrap: wrap; */
+    margin-left: 150px; 
+  }
+#button-container button {
+    color: white;
+    border:1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px #aaa;
+    padding: 5px 8px;
+    background-color: rgba(56, 9, 9, 0.3);  
+    cursor: pointer;
+    margin-left: 0px;
+    font-size: 20px;
+    border-style: outset;
+}
+#button-container button:hover {
+    background-color: rgba(161, 75, 53, 0.137)
+  }
 
+#button-container button:active {
+    transform: scale(0.98);
+  }
+
+#button-container button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(233, 236, 238, 0.5);
+  }
 #pagination button:hover,
 #pagination-suggestion button:hover {
   background-color: rgb(160, 140, 140);

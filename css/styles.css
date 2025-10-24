@@ -36,12 +36,12 @@ h1 {
 
   #rubriques{
     margin-top: 100px;
-    gap: 100px;
+    gap: 150px;
     flex-wrap: wrap;
-    margin-left: 400px;
+    margin-left: 150px;
   }
 #rubriques button {
-    color: #bd3838;
+    color: white;
     border:1px solid #ccc;
     border-radius: 8px;
     cursor: pointer;

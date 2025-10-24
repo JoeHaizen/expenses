@@ -19,7 +19,7 @@ const rubriques = document.getElementById('rubriques');
 
 imgAccueil.addEventListener('click', () => {
   imgAccueil.style.width = '30%';
-  imgAccueil.style.marginLeft = '650px';
+  imgAccueil.style.marginLeft = '500px';
   rubriques.style.display = 'flex'; // ou 'block' si tu préfères en colonne
 });
 
