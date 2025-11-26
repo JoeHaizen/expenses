@@ -189,3 +189,17 @@ input:hover {
 #btnAccueil:hover {
   background-color: rgb(160, 140, 140);
 }
+#exportBtn {
+  margin: 5px;
+  padding: 6px 12px;
+  background-color: rgb(97, 81, 81);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 66px;
+}
+
+#exportBtn:hover {
+  background-color: rgb(160, 140, 140);
+}

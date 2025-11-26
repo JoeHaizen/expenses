@@ -408,6 +408,24 @@ buttons.forEach(button => {
     )
   });
 });
+document.getElementById('exportBtn').addEventListener('click', () => {
+    fetch('/export/excel')
+        .then(response => {
+            if (!response.ok) throw new Error("Erreur lors du téléchargement");
+            return response.blob();
+        })
+        .then(blob => {
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'export.xlsx';  // Nom du fichier à sauvegarder
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url);
+        })
+        .catch(error => console.error("Erreur export Excel :", error));
+});
 
 
 
