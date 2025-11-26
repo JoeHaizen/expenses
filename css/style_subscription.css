@@ -1,0 +1,126 @@
+#subscription {
+  margin-left: 250px;
+  color: rgb(68, 58, 61);
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(226, 220, 220);
+}
+
+#new-expense-title {
+  font-size: 25px;
+  margin-left: -46px;
+}
+/* Sélecteur du mois/année */
+.selecteur-mois {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: rgb(119, 101, 101);
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  font-family: sans-serif;
+  color: rgb(68, 58, 61);
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#moisAnnee {
+  color: rgb(68, 58, 61);
+  font-size: 25px;
+  font-family: sans-serif;
+  margin: auto;
+}
+
+/* Formulaire d’ajout */
+.new-subscription {
+  margin-left: 50px;
+}
+
+/* Tables principales */
+table {
+  width: 80%;
+  margin: 20px auto;
+  margin-left: 10px;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+thead {
+  background-color: rgb(97, 81, 81);
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+* Champs texte et zone de saisie */
+textarea {
+  width: 80%;
+  height: 100px;
+  padding: 10px;
+  font-size: 14px;
+  resize: vertical;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+textarea:hover {
+  background-color: rgb(160, 140, 140);
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: rgb(97, 81, 81);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding: 8px 16px;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(248, 244, 244);
+}
+
+input:hover {
+  background-color: rgb(160, 140, 140);
+}
+
+/* Pagination */
+#pagination button {
+  margin: 5px;
+  padding: 6px 12px;
+  background-color: rgb(97, 81, 81);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

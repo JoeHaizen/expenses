@@ -155,6 +155,28 @@ async function loadExpenseSuggestions() {
     alert("Impossible de charger les suggestions de dépenses. Vérifiez le serveur API.");
   }
 }
+async function loadTotalSubscriptions() {
+  try {
+    const total = 0;
+    const response = await fetch("http://localhost:8080/api/subscriptions");
+    if (!response.ok) throw new Error("Erreur de chargement des abonnements");
+
+    const subscriptions = await response.json();
+    const selectedMonth = getSelectedMonthYear();
+
+    subscriptions.forEach(subscription => {
+      // Condition to check later
+      if (!selectedMonth || subscription.monthYearEnd.isNull) {
+        total += subscription.amount;
+      }
+    });
+    } 
+    catch (error) {
+    console.error("Erreur dans loadTotalSubscriptions:", error);
+    alert("Impossible de charger la somme des abonnements. Vérifiez le serveur API.");
+  }
+}
+/* > */
 
 // -------------------------------
 // ➕ Ajout d’une nouvelle dépense
@@ -382,7 +404,7 @@ buttons.forEach(button => {
 
     window.open(page,
       `popup-${page}`,
-      "width=800,height=600,top=100,left=100,resizable=yes,scrollbars=yes"
+      "width=1200,height=800,top=50,left=100,resizable=yes,scrollbars=yes"
     )
   });
 });
