@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Expenses</title>
-  <link rel="stylesheet" href="/css/style_expenses.css">
+  <link rel="stylesheet" href="../css/style_expenses.css">
 </head>
 <body>
-  <h1 id="expense">EXPENSES -$</h1>
+  <h1 id="expense">EXPENSES 💸</h1>
 <!--   <img class="ImageAccueil" src="Images/MoneyScale.png" alt="Money Time Scale"> -->
-<div class="selecteur-mois">
+  <div id="accueil"> <button id="btnAccueil">ACCUEIL</button></div>
+  <div class="selecteur-mois">
     <label for="moisAnnee">Mois & Année :</label>
     <input type="month" id="moisAnnee" name="moisAnnee">
   </div>
   <div class="new-expense">
     <h1 id="new-expense-title">New expense</h1>
-    <form action="" method="post">
+    <form id="add-new-expense" action="" method="post">
 
 
         <label for="expense">Add Amount</label>
@@ -22,6 +23,9 @@
 
         <label for="label">Add Label</label>
         <input type="text" id="label-new-expense" required>
+
+         <label for="description">Add Description</label>
+        <input type="text" id="description-new-expense" required>
 
         <input type="submit" value="Send">
     </form>
@@ -33,31 +37,30 @@
             <th>Expense</th>
             <th>Amount</th>
             <th>Description</th>
+            <th>Date</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Voyage</td>
-            <td>1000</td>
-            <td>Description</td>
-          </tr>
-          <tr>
-            <td>Courses</td>
-            <td>340</td>
-            <td>Description</td>
-          </tr>
         </tbody>
       </table>
   </div>
   <div id="pagination"></div>
+<div id="button-container"> 
+  <button id="btnAbonnement" data-page="abonnement.html">ABONNEMENT</button>
+  <button id="btnx4paiements" data-page="x4paiements.html">x4 PAIEMENTS</button>
+  <button id="btnstats" data-page="stats.html">STATS</button>
+  <button id="btnfixedbudget" data-page="fixedbudget.html">FIXED BUDGET</button>
+</div>
+
   <div class="new-suggestion">
     <h1 id="new-suggestion-title">New suggestion</h1>
-    <form action="" method="post">
+    <form id="add-new-suggestion" action="" method="post">
 
 
         <label for="suggestion">Add new suggestion</label>
-        <input type="text" id="suggestion-title" required>
-        <textarea  id="suggestion" required></textarea>
+        <input type="text" id="new-suggestion" required>
+        <textarea  id="content-new-suggestion" required></textarea>
         <br>
         <input type="submit" value="Send">
     </form>
@@ -66,32 +69,18 @@
     <table id = "suggestion-table">
         <thead>
           <tr>
-            <th>Suggesstion</th>
+            <th>Suggestion</th>
             <th>Content</th>
+            <th>Date</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Suggestion1</td>
-            <td>paragraphe paragraphe paragraphe paragraphe 
-                paragraphe paragraphe paragraphe paragraphe 
-                paragraphe paragraphe paragraphe paragraphe 
-                paragraphe paragraphe paragraphe paragraphe 
-                paragraphe paragraphe paragraphe paragraphe 
-            </td>
-          </tr>
-          <tr>
-            <td>Suggestion2</td>
-            <td>paragraphe paragraphe paragraphe paragraphe 
-                paragraphe paragraphe paragraphe paragraphe 
-                paragraphe paragraphe paragraphe paragraphe 
-                paragraphe paragraphe paragraphe paragraphe 
-                paragraphe paragraphe paragraphe paragraphe </td>
-          </tr>
         </tbody>
       </table>
   </div>
   <div id="pagination-suggestion"></div>
-  <script src="/js/script_expense.js"></script>
+  <button id="exportBtn">Exporter Excel</button>
+  <script src="../js/script_expenses.js"></script>
 </body>
 </html>

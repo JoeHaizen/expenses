@@ -1,10 +1,4 @@
-/* ============================================================
-   💸 STYLE DES DÉPENSES — PAGE TABLEAU DE BORD
-   Ce fichier gère la mise en page, les couleurs et la typographie
-   de la page des dépenses (expenses.html).
-   ============================================================ */
-
-#expense {
+#subscription {
   margin-left: 250px;
   color: rgb(68, 58, 61);
   font-size: 50px;
@@ -19,7 +13,6 @@ body {
   font-size: 25px;
   margin-left: -46px;
 }
-
 /* Sélecteur du mois/année */
 .selecteur-mois {
   position: absolute;
@@ -45,7 +38,7 @@ body {
 }
 
 /* Formulaire d’ajout */
-.new-expense {
+.new-subscription {
   margin-left: 50px;
 }
 
@@ -77,8 +70,7 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
   background-color: #f1f1f1;
 }
-
-/* Champs texte et zone de saisie */
+* Champs texte et zone de saisie */
 textarea {
   width: 80%;
   height: 100px;
@@ -115,6 +107,7 @@ input {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  background-color: rgb(248, 244, 244);
 }
 
 input:hover {
@@ -122,8 +115,7 @@ input:hover {
 }
 
 /* Pagination */
-#pagination button,
-#pagination-suggestion button {
+#pagination button {
   margin: 5px;
   padding: 6px 12px;
   background-color: rgb(97, 81, 81);
@@ -131,75 +123,4 @@ input:hover {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-#button-container {
-/*     margin-top: 100px;*/   
-     gap: 100px;
-     display: flex;
-    /* flex-wrap: wrap; */
-    margin-left: 150px; 
-  }
-#button-container button {
-    color: white;
-    border:1px solid #ccc;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 2px 2px 5px #aaa;
-    padding: 5px 8px;
-    background-color: rgba(56, 9, 9, 0.3);  
-    cursor: pointer;
-    margin-left: 0px;
-    font-size: 20px;
-    border-style: outset;
-}
-#button-container button:hover {
-    background-color: rgba(161, 75, 53, 0.137)
-  }
-
-#button-container button:active {
-    transform: scale(0.98);
-  }
-
-#button-container button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(233, 236, 238, 0.5);
-  }
-#pagination button:hover,
-#pagination-suggestion button:hover {
-  background-color: rgb(160, 140, 140);
-}
-
-/* Bouton Accueil */
-#accueil {
-  margin-top: -79px;
-}
-
-#btnAccueil {
-  margin: 5px;
-  padding: 6px 12px;
-  background-color: rgb(97, 81, 81);
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-bottom: 66px;
-}
-
-#btnAccueil:hover {
-  background-color: rgb(160, 140, 140);
-}
-#exportBtn {
-  margin: 5px;
-  padding: 6px 12px;
-  background-color: rgb(97, 81, 81);
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-bottom: 66px;
-}
-
-#exportBtn:hover {
-  background-color: rgb(160, 140, 140);
 }
